@@ -21,7 +21,16 @@ export function Home() {
         setRecipeList(searchRecipeList)
     }
 
-    
+    else if(checked.ingredients===true) { 
+
+    }
+
+    else if(checked.cuisine===true) { 
+        const searchRecipebyCuisine = [...recipes].filter((item)=> item.cuisine.toLowerCase().includes(searchValue.toLowerCase()))
+        setRecipeList(searchRecipebyCuisine)
+    }
+
+
     
   };
 

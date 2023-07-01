@@ -1,7 +1,7 @@
 export let recipes = [
   {
     id: 1,
-    cuisine: "Indian",
+    cuisine: "North Indian",
     name: "Paneer Tikka Masala",
     image: "https://res.cloudinary.com/djhnar3ju/image/upload/v1688222043/RecipeGenerator/paneertikkamasala.png",
     ingredients: [
@@ -41,7 +41,7 @@ export let recipes = [
 
   {
     id: 2,
-    cuisine: "Indian",
+    cuisine: "South Indian",
 
     name: "Vegetable Biryani",
     image: "https://res.cloudinary.com/djhnar3ju/image/upload/v1688222043/RecipeGenerator/vegbiryani.png",
@@ -83,7 +83,7 @@ export let recipes = [
 
   {
     id: 3,
-    cuisine: "Indian",
+    cuisine: "Punjab Indian",
     name: "Chana Masala",
     image: "https://res.cloudinary.com/djhnar3ju/image/upload/v1688222043/RecipeGenerator/chanamasala.png",
     ingredients: [
@@ -118,7 +118,7 @@ export let recipes = [
 
   {
     id: 4,
-    cuisine: "Indian",
+    cuisine: "Pan Indian",
     name: "Palak Paneer",
     image: "https://res.cloudinary.com/djhnar3ju/image/upload/v1688222043/RecipeGenerator/palakpaneer.png",
     ingredients: [
@@ -154,7 +154,7 @@ export let recipes = [
 
   {
     id: 5,
-    cuisine: "Indian",
+    cuisine: "Pan Indian",
 
     name: "Aloo Gobi",
     image: "https://res.cloudinary.com/djhnar3ju/image/upload/v1688222043/RecipeGenerator/aloogobi.png",
