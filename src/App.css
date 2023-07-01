@@ -1,0 +1,107 @@
+.search-filter { 
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.card-img, .card-cont, .card-badge, .card-details {
+    display: flex;
+    align-items: center;
+}
+
+.card-cont, .card-details {
+    flex-direction: column;
+    width: 240px;
+    height: 451px;
+}
+
+.card-cont { 
+    background-color: rgb(246, 187, 187);
+}
+
+.card-img {
+    justify-content: center;
+    /* #8818081c */
+    background: #8818081c;
+    width: 13rem;
+    height: 15rem;
+    position: relative;
+    padding: 2rem 1rem;
+}
+
+.card-img img {
+    height: 90%;
+    width: auto;
+}
+
+/* 
+.card-cont { 
+
+} */
+
+
+.card-badge .red-fav {
+    color: red;
+}
+
+/* .card-details{
+
+} */
+
+i.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    color: red;
+    cursor: pointer;
+  }
+
+  i#red-fill.material-symbols-outlined { 
+    font-variation-settings: 
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48; 
+    color: red;
+    cursor: pointer;
+}
+
+
+.active-button {
+    background-color: #3b82f6;
+    cursor: pointer;
+}
+
+.card-button {
+    color: #fff;
+    text-align: center;
+    padding: .5rem;
+    width: 100%;
+    border: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    background-color: #881808bf;
+    cursor: pointer;
+}
+
+.recipe-container { 
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.links { 
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.recipe-card { 
+    display: flex;
+    border: 1px solid black;
+    padding: 1rem;
+    gap: 20px;
+    align-items: center;
+}
