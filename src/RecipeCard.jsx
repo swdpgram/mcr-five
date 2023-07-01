@@ -4,7 +4,16 @@ export function RecipeCard({
     name,
     cuisine,
     id,
+    recipeList,
+    setRecipeList
 }) {
+
+const deleteRecipe = (id) => { 
+   const deletedList = recipeList.filter((item)=> item.id!==id)
+   setRecipeList(deletedList)
+}
+
+
   return (
     <>
       <div className="card-cont">
@@ -14,7 +23,7 @@ export function RecipeCard({
           <div className="card-badge">
             <i
               className="material-symbols-outlined"
-              onClick={() => console.log("here")}
+              onClick={() =>deleteRecipe(id)}
             >
               delete
             </i>
@@ -39,21 +48,7 @@ export function RecipeCard({
              <span> <b> Ingredients:</b> <Link to={"/recipe/"+id} className="links"> See Recipe {">"} </Link> </span> 
             <span> <b> Instructions:</b> <Link to={"/recipe/"+id} className="links"> See Recipe {">"} </Link> </span>
         </div>
-{/* 
-        <button
-          className="card-button active-button"
-          onClick={() => console.log("here")}
-        >
-          {" "}
-          Add to Cart
-        </button>
-        <button
-          className="card-button active-button"
-          onClick={() => console.log("here")}
-        >
-          {" "}
-          Go to Cart
-        </button> */}
+
       </div>
     </>
   );

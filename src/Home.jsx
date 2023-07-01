@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { RecipeCard } from "./RecipeCard";
 import { recipes } from "./data";
 
 export function Home() {
+
+   const [recipeList, setRecipeList] = useState(recipes)
+
   return (
     <>
      <div className="header"> 
@@ -36,10 +40,11 @@ export function Home() {
         <h1> All Recipes: </h1>
         <div className="recipe-container">
         { 
-        recipes.map((item,index)=> { 
+        recipeList?.map((item)=> { 
+            const sendRecipe = {recipeList, setRecipeList,...item}
             return(
                 <div key={item.id}>
-                <RecipeCard {...item} />
+                <RecipeCard {...sendRecipe} />
                 </div>
             );
         })
